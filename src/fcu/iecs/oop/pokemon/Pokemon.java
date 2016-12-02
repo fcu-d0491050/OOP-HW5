@@ -3,20 +3,28 @@ package fcu.iecs.oop.pokemon;
 import java.util.Scanner;
 public class Pokemon {
 	
-	private static String name = Pokemon.getName();
-	private static int cp;
-	public static Pokemon p1;
-	public static Pokemon p2;
+	private String name = Pokemon.getName();
+	private int cp;
 	
-	public static String getName ()
+	public  Pokemon(String name, int cp)
+	{
+		this.name = name;
+		this.cp=cp;
+	}
+	
+	public String getName ()
 	{
 		return name;
 	}
 	
-	public static int increaseCP()
+	public int getCp()
 	{
-		cp = cp + 500;
 		return cp;
 	}
+
+	  public void setCp(int cp)
+	  {
+		this.cp = cp;
+	  }
 
 }
